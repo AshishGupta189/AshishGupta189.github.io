@@ -125,3 +125,65 @@ min-width: 400px;
 
 
 /* media */
+@media all and (max-width:970px) {
+    
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        background: #111;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .menu-btn{
+        display:block;
+        z-index: 999;
+    }
+    .navbar .menu.active{
+        left:0;
+
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+   
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    #home_c{
+        display: grid;
+        width:100%
+    }
+    .home-content{
+        text-align: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .home .home-content .text1{
+        font-size: 24px;
+    }
+    .home .home-content .text2{
+        font-size: 65px;
+    }
+    .home .home-content .text3{
+        font-size: 30px;
+        
+    }
+    #image{
+        width:50%;
+        min-width: 200px;
+        margin: auto;
+        }
+    #image img{
+        width:100%;
+        text-align: center;
+    }
+}
