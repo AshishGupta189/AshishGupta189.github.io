@@ -52,6 +52,13 @@
 .navbar .logo a span{
     color: greenyellow;
 }
+
+.menu-btn{
+    color:#fff;
+    font-size: 23px;
+    cursor: pointer;
+    display:none;
+}
 /* home styling */
 .home{
     display: flex;
@@ -118,43 +125,3 @@ min-width: 400px;
 
 
 /* media */
-@media all and (max-width:800px) and (min-width:400px){
-    .home{
-        height:150vh;
-    }
-    .navbar .logo a{
-       display: none;
-    }
-    .max-width{
-        max-width: 650px;
-       padding: 0px;
-    }
-    #home_c{
-        display: grid;
-        width:100%
-    }
-    .home-content{
-        text-align: center;
-        margin: auto;
-        margin-top: 50px;
-    }
-    .home .home-content .text1{
-        font-size: 24px;
-    }
-    .home .home-content .text2{
-        font-size: 65px;
-    }
-    .home .home-content .text3{
-        font-size: 30px;
-        
-    }
-    #image{
-        width:50%;
-        min-width: 200px;
-        margin: auto;
-        }
-    #image img{
-        width:100%;
-        text-align: center;
-    }
-}
