@@ -63,7 +63,8 @@
 
 .home{
     display: flex;
-    background: url("images/279547.webp") no-repeat center;
+    background: url("https://tsiory.youngdev.mg/assets/images/background-2.jpeg") no-repeat center;
+    background-size: cover;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -122,11 +123,18 @@ section .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu',sans-serif;
 }
-.about .about-content,.services .serv-content,.skills .skills-content,.project .project-content{
+.about .about-content,.services .serv-content,.skills .skills-content{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+
+}
+.project .project-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 .about .about-content .left {
@@ -227,6 +235,7 @@ section .title{
     width:33%;
     border: 5px solid black;
     background:#222;
+
 }
 .content h2{
     margin: 20px;
@@ -237,6 +246,7 @@ section .title{
     margin: auto;
 }
 .image img{
+    height: 250px;
     width:90%;
     display: block;
     margin: auto;
@@ -244,7 +254,227 @@ section .title{
     border-radius: 6px;
     border: 5px solid red;
 }
+.outerBox{
+    background-color: #0d1117;
+}
 
+.calendarContainer{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    
+    color: white;
+}
+
+.calendarContainer .calendarBox{
+    margin: auto;
+}
+
+    
+.calendarContainer .calendarBox > h3{
+    text-align: center;
+    border: 3px solid black;
+    width: fit-content;
+    border-radius: 7px;
+    padding: 1%;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 5%;
+    background-color: rgb(53, 133, 146);
+    color: white;
+}
+
+.graph{
+    width: 100%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    background-color: #0d1117;
+}
+
+.graph  img{
+    width: 80%;
+    margin: auto;
+}
+
+.graph-1{
+    display: block;
+    background-color: #0d1117;
+}
+.graph-1  img{
+    width: 60%;
+    margin: auto;
+}
+
+@media all and (min-width: 481px) and (max-width: 768px){
+    .calendarContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5%;
+    }
+    
+    .calendarContainer .calendarBox{
+        margin: auto;
+    }
+    
+        
+    .calendarContainer .calendarBox > h3{
+        border-radius: 7px;
+        font-size: 15px;
+        margin-top: 7%;
+        border: 1px solid rgb(22, 4, 61);
+        margin-bottom: 6%;
+    }
+    
+    .Calendar{
+        height: 300px;
+    }
+
+    .graph  img{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .graph-1  img{
+        width: 80%;
+        margin: auto;
+    }
+}
+.statsBox{
+    display: block;
+    text-align: center;
+    background-color: #0d1117;
+    padding-top: 5%;
+}
+
+.statsBox > h3{
+    font-size: 20px;
+    border: 3px solid black;
+    width: fit-content;
+    margin: auto;
+    border-radius: 7px;
+    background-color: rgb(53, 133, 146);
+    color: white;
+    margin-bottom: 1%;
+    padding: 4px;
+}
+
+.statsContainer{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.stats-2{
+    display: block;
+}
+
+.stats-2  img{
+    width: 70%;
+    margin: auto;
+}
+
+.stats-3{
+    display: block;
+}
+
+.stats-3  img{
+    width: 20%;
+    margin: auto;
+}
+
+@media all and (min-width: 481px) and (max-width: 768px){
+
+    .statsContainer{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .statsContainer > div a img{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .statsBox > h3{
+        font-size: 15px;
+        margin-bottom: 5%;
+        border: 1px solid rgb(22, 4, 61);
+    }
+        
+    .stats-3{
+        display: block;
+        padding-top: 3%;
+    }
+
+    .stats-3  img{
+        width: 40%;
+        margin: auto;
+    }
+}
+
+
+@media all and (min-width: 250px) and (max-width: 480px){
+    .statsContainer{
+        display: block;
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+        
+    .stats-2  img{
+        width: 95%;
+        margin: auto;
+    }
+
+    .statsContainer > div a img{
+        width: 100%;
+    }
+    
+    .statsBox > h3{
+        font-size: 13px;
+        margin-bottom: 5%;
+        border: 1px solid rgb(22, 4, 61);
+    }
+    .stats-3{
+        display: block;
+        margin-top: 5%;
+    }
+    .stats-3  img{
+        width: 60%;
+        margin: auto;
+        margin-top: 5%;
+    }
+    
+}
+
+
+@media all and (min-width: 280px) and (max-width: 480px){
+    
+    .calendarContainer .calendarBox{
+        margin: auto;
+    }
+        
+    .calendarContainer .calendarBox > h3{
+        border-radius: 7px;
+        font-size: 13px;
+        margin-top: 7%;
+        border: 1px solid rgb(22, 4, 61);
+        margin-bottom: 6%;
+    }
+    .graph  img{
+        width: 90%;
+        margin: auto;
+    }
+    
+    .graph-1  img{
+        width: 80%;
+        margin: auto;
+    }
+}
 
 
 
@@ -255,6 +485,9 @@ section .title{
 @media(max-width:1300px) {
     .home .max-width{
         margin-left: 0px;
+    }
+    .projects{
+        height:700px;
     }
 }
 @media(max-width:1100px) {
