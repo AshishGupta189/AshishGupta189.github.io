@@ -112,7 +112,7 @@
 section{
     padding: 100px 0 80px 0;
 }
-.about,.services,.skills{
+.about,.services,.skills,.contacts{
     font-family: 'Poppins',sans-serif;
 }
 section .title{
@@ -310,15 +310,12 @@ section .title{
     color: #fff;
 }
 #links{
-    height:200px;
     width:30%;
-    border:5px solid;
     margin: auto;
     margin-top: 20px;
     display: flex;
 }
 #links div{
-    border: 2px solid;
     width: 30%;
     margin: auto;
 }
@@ -342,6 +339,7 @@ section .title{
     width:100%;
 }
 #links img{
+    height:100px;
     width:100%;
 }
 
@@ -433,7 +431,18 @@ section .title{
         margin: auto;
         justify-content: center;
     }
-
+    #cont{
+        width:100%;
+        display: flex;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        color: rgb(226, 174, 42);
+        
+    }
+    #cont .info{
+        width:90%;
+    }
     .statsContainer > div a img{
         width: 100%;
         margin: auto;
@@ -464,7 +473,18 @@ section .title{
         margin: auto;
         justify-content: center;
     }
+    #cont{
+        width:100%;
+        display: flex;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        color: rgb(226, 174, 42);
         
+    }
+    #cont .info{
+        width:30%;
+    } 
     .stats-2  img{
         width: 95%;
         margin: auto;
@@ -522,6 +542,18 @@ section .title{
 
 /* responsiveness */
 @media(max-width:1300px) {
+    #cont{
+        width:80%;
+        display: flex;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        color: rgb(226, 174, 42);
+        
+    }
+    #cont .info{
+        width:90%;
+    }
     .home .max-width{
         margin-left: 0px;
     }
