@@ -344,7 +344,8 @@ section .title{
     color: #0d1117;
 }
 .contact{
-    background:url("https://img.freepik.com/premium-photo/web-contact-us-icons-blue-background-contact-us-cutomer-support-concept-copy-space-website-page-contact-us-web-banner-copy-space-blue-background_256259-1520.jpg?w=2000");
+    background:url("https://img.freepik.com/premium-photo/web-contact-us-icons-blue-background-contact-us-cutomer-support-concept-copy-space-website-page-contact-us-web-banner-copy-space-blue-background_256259-1520.jpg?w=2000") no-repeat center;
+    background-size: cover;
 }
 
 
