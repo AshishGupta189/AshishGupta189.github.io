@@ -434,9 +434,6 @@ section .title{
         margin: auto;
         justify-content: center;
     }
-    .projects{
-        height: 600px;
-    }
     .stats-2  img{
         width: 95%;
         margin: auto;
@@ -502,6 +499,7 @@ section .title{
     
     }
 }
+
 
 
 @media(max-width:1300px) {
@@ -844,6 +842,14 @@ section .title{
       width:350px;
     }
   }
+
+  @media(max-width:380px){
+
+    .projects{
+        height:700px;
+        width: 100%;
+    }
+}
 
 .bgimage {
     font-family: 'Ubuntu',sans-serif;
