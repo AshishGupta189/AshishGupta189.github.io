@@ -198,8 +198,8 @@ section .title{
     text-align: center;
 }
 .projects{
-    height:650px;
-    width:33%;
+    height:680px;
+    width:35%;
     border: 5px solid black;
     background:#222;
 
@@ -434,6 +434,9 @@ section .title{
         margin: auto;
         justify-content: center;
     }
+    .projects{
+        height: 600px;
+    }
     .stats-2  img{
         width: 95%;
         margin: auto;
@@ -490,6 +493,17 @@ section .title{
 
 
 /* responsiveness */
+
+@media(max-width:1350px){
+
+    .projects{
+        height:720px;
+        width:40%;
+    
+    }
+}
+
+
 @media(max-width:1300px) {
     .home .max-width{
         margin-left: 0px;
@@ -519,6 +533,10 @@ section .title{
     }
     .skills .skills-content .card .box img{
         height:100px;
+    }
+    .projects{
+        height:770px;
+    
     }
 }
 
@@ -647,6 +665,7 @@ section .title{
         height:70px;
     }
     .projects{
+        height: 550px;
         width:95%;
     }
     .content p{
@@ -681,6 +700,9 @@ section .title{
     .home .home-content .text3{
         font-size: 27px;
         
+    }
+    .projects{
+        height: 600px;
     }
     .skills .skills-content .card .box img{
         width:80%;
@@ -823,10 +845,6 @@ section .title{
     }
   }
 
-          
-     
-
-/* hero background image */
 .bgimage {
     font-family: 'Ubuntu',sans-serif;
     height:100vh;
