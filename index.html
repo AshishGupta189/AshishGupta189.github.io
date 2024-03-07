@@ -1,269 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">   
-     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo">
-                <a href="#">< Ashish <span>/>.</span></a>
-            </div>
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li> <a href="./download/Ashish-Gupta-Resume.pdf" download class="top-btn">Resume</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
 
-    <!-- main banner -->
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <h2 class="hero_title">Hey, it's <span style="color:  #c9131398;">Ashish Gupta.</span></h2>
-                <p class="hero_desc">I am a professional <span style="color: rgb(153, 66, 66); font-size: 50px;">Java Backend Developer</span></p>
-            </div>
-            </div>
-        </div>
-    </section>
-    
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Ashish Gupta</title>
+  </head>
 
-      <!-- About Section Start -->
-  <section class="about" id="about">
-    <div class="content">
-      <div class="title"><span>About Me</span></div>
-      <div class="about-details">
-        <div class="left">
-          <img src="./images/SANTOSH BOY.jpg" alt="Portfolio">
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <div class="leftnav"></div>
+        <div class="rightnav">
+          <a href="#home">Home</a>
+          <a href="./download/Ashish-Gupta-Resume.pdf" id="downloadresume" download="Ashish_Gupta_Resume" target="_blank" class="top-btn">Resume</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Get In Touch</a>
         </div>
-        <div class="right">
-          <!-- <div class="topic">I'm Ashish Gupta and I'm a Java Developer</div> -->
-         <p>I'm a highly resourceful and passionate Java Backend Developer. I love designing, building and maintaining Java-based applications and I am looking for more opportunity to work in coding.
-            Passionate about developing well-designed, efficient, and testable code, I enjoy working with and adapting to technologies as they develop.
-            I love exploring new places, a Life Explorer and a Lover of Life!</p>
-          <div class="button">
-            <button><a href="./download/Ashish-Gupta-Resume.pdf" download class="top-btn">Resume</a></button>
+      </div>
+      <div class="menuicon" id="menuid" onclick="changeFunction()">
+        <div id="line1"></div>
+        <div id="line2"></div>
+        <div id="line3"></div>
+      </div>
+      <div id="slidenavbar">
+        <div class="menuicon" onclick="changeFunction()">
+          <div id="line1"></div>
+          <div id="line2"></div>
+          <div id="line3"></div>
+        </div>
+
+        <div>
+          <a href="#home" onclick="changeFunction()">Home</a>
+          <a href="./download/Ashish-Gupta-Resume.pdf" id="downloadresume3" download="Ashish_Gupta_Resume" target="_blank" class="top-btn" onclick="changeFunction()">Resume</a>
+          <a href="#about" onclick="changeFunction()">About</a>
+          <a href="#skills" onclick="changeFunction()">Skills</a>
+          <a href="#projects" onclick="changeFunction()">Projects</a>
+          <a href="#contact" onclick="changeFunction()">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="hero" id="home">
+        <div class="lefthero">
+          <div>
+            <h1>
+              
+              Hi👋, I'm <span style="color: #ffa31a">Ashish Gupta</span><br />
+              A Software Developer
+            </h1>
+
+            <div id="herobtn">
+              
+              <a href="./download/Ashish-Gupta-Resume.pdf" id="downloadresume4" download="Ashish_Gupta_Resume" target="_blank" class="top-btn">Resume</a>
+              <a href="#contact">Get In Touch</a>
+            </div>
           </div>
+        </div>
+        <div class="righthero">
+         
+           
+            <div class="imgdiv">
+              <img
+                src="./download/SANTOSH BOY.jpg"
+                alt="img"
+              />
+            </div>
+         
         </div>
       </div>
     </div>
-  </section>
 
-   
-
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My Skills and Tools</h2>
-            <div class="skills-content">
-                <div class="card">
-                    <div class="box">
-                        <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="https://gauravportfolio0083.netlify.app/images/java.svg" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="https://gauravportfolio0083.netlify.app/images/aws.svg" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="https://gauravportfolio0083.netlify.app/images/mysql.svg" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="https://i0.wp.com/theicom.org/wp-content/uploads/2016/03/js-logo.png?fit=500%2C500&ssl=1&w=640" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="https://design.jboss.org/hibernate/logo/final/hibernate_logo_whitebkg_stacked_256px.png" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="https://gauravportfolio0083.netlify.app/images/spring.svg" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="https://miro.medium.com/max/2400/0*BRl-uL7N9LF-1hiD.png" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="https://cdn.icon-icons.com/icons2/3053/PNG/512/microsoft_visual_studio_code_macos_bigsur_icon_189957.png" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="https://gopalkrushnas063.github.io/images/skills/intellij.png" alt="">
-                    </div>
-                </div>
-               </div>
-        </div>
-    </section>
-
-    <section class="project" id="project">
-        <div class="max-width">
-            <h2 class="title">My Projects</h2>
-            <div class="project-content">
-                
-
-                <div class="projects">
-                    <div class="image">
-                        <img src="images/Screenshot 2022-12-13 at 7.03.44 PM (1).png" alt="">
-                    </div>
-                    <div class="content">
-                        <h2>Online Cab Booking Service</h2>
-                        <p>It's an application for performing various operations of Admin, Driver and Customer using Rest API's.
-                        </p>
-                        <p style="margin-top:20px ;">Techstacks : Java,Spring,MySQL</p>
-
-                        <a href="https://github.com/AshishGupta189/Online-Cab-Services" target="_blank">Git Repo -></a>
-                        <a href="https://drive.google.com/file/d/1xOSlcDQIdoCwVnB3MpN0yr98bPvcC56S/view?usp=sharing" target="_blank">Live Video</a>
-                    </div>
-                </div>
-                
-                <div class="projects">
-                    <div class="image">
-                        <img src="images/COurse Monitoring System.png" alt="">
-                    </div>
-                    <div class="content">
-                        <h2>Course Monitoring System</h2>
-                        <p>It's a console-based application to keep track of Courses,
-                            Faculty,day-wise plans, and course plans.</p>
-                        <p style="margin-top:20px ;">Techstacks : Java,Jdbc,MySQL</p>
-
-                        <a href="https://github.com/AshishGupta189/righteous-sink-155/tree/main/src" target="_blank">Git Repo -></a>
-                        <a href="https://drive.google.com/file/d/1ReyE_9uONdlmU5xL7Pz1lnrJkMUJ3GL6/view" target="_blank">Live Video</a>
-                    </div>
-                </div>
-                <div class="projects">
-                    <div class="image">
-                        <img src="images/image4-21.png" alt="">
-                    </div>
-                    <div class="content">
-                        <h2>Monday.com </h2>
-                        <p>It is a  tool that let users track and
-                            coordinate projects and plan their routines according to
-                            tasks.</p>
-                        <p style="margin-top:20px ;">Techstacks : HTML,CSS,JAVASCRIPT</p>
-
-                        <a href="https://github.com/AshishGupta189/Monday.comclone" target="_blank">Git Repo -></a>
-                        <a href="https://roaring-meringue-e04538.netlify.app/" target="_blank">Live Site -></a>
-                    </div>
-                </div>
-                <div class="projects">
-                    <div class="image">
-                        <img src="images/new_cricinfo_site.png" alt="">
-                    </div>
-                    <div class="content">
-                        <h2>EspnCricInfo</h2>
-                        <p>It is a live cricket score website where users can get updates
-                            on Cricket matches and cricket news.</p>
-                        <p style="margin-top:20px ;">Techstacks : HTML,CSS,JAVASCRIPT</p>
-
-                        <a href="https://github.com/AshishGupta189/Espn-Cricinfo-clone" target="_blank">Git Repo -></a>
-                        <a href="https://cerulean-pothos-636dc4.netlify.app/" target="_blank">Live Site -></a>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <div class="title reveal" style="width: 90%; margin: auto;">
-        <a target="_blank" rel="noreferrer" id="cicin" href="https://github.com/AshishGupta189">
-        <p style="text-align: center; font-size: 200%; padding: 3%;">My Github contributions-</p>
-        <img width="100%" style="margin-bottom:20px;display: flex; padding: auto;"  id="github-contributions" src="https://ghchart.rshah.org/AshishGupta189" href="https://github.com/AshishGupta189" alt="AshishGupta189's Github chart" />
-    </a>
-    </div>
-    <div class="statsBox">
-        <h3>GitHub Stats</h3>
-        <div>
-        <div class="statsContainer">
-            <div>
-                <a href="https://github.com/AshishGupta189" target="_blank">
-                    <img align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=AshishGupta189" />
-                </a>
-            </div>
-        </div>
-
-        <div class="stats-3">
-            <p align="center">
-                <a href="https://github.com/AshishGupta189/github-readme-stats"><img alt="AshishGupta189 Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AshishGupta189&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=0D1117" /></a>
-            </p>
-        </div>
-
-        <div class="stats-2">
-            <p align="center">
-                <!-- <a href="https://github.com/AshishGupta189/github-readme-stats" target="_blank">
-                    <img alt="AshishGupta189 Github Stats" 
-                    src="https://github-readme-stats.vercel.app/api?username=AshishGupta189&show_icons=true&locale=en&theme=react&hide_border=true&bg_color=0D1117" 
-                    />
-                </a> -->
-            </p>
-        </div>
-
-        
-        </div>
-    </div>
-    <div class="graph-1">
-        <p align="center">
-            <a href="https://github.com/AshishGupta189" target="_blank"><span>
-                <img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AshishGupta189&theme=dracula&bg_color=0D1117" />
-            </span></a> 
+    <div class="about" id="about">
+      <div id="desc">
+        <h2>About Me</h2>
+        <h3>Hi, I’m Ashish. Nice to meet you.</h3>
+        <p style="line-height: 28px">
+          Passionate Java Backend Developer with a zest for crafting well-designed, efficient, and testable code. 
+          Experienced SDE intern at Masai for 6 months, contributing to innovative projects. 
+          Eager to explore new opportunities in coding, adapt to evolving technologies, and bring enthusiasm as a Life Explorer to a dynamic team.
+          I enjoy working with and adapting to technologies as they develop. I love exploring new places, a Life Explorer and a Lover of Life!
         </p>
+      </div>
+      
     </div>
-    <section  class="contact" id="contact">
-        <h2 class="title">Contact me</h2>
-        <div class="content">
-        <i class="fas fa-phone-alt">  <span> Phone : +91 9648472430</span></i>
-        <i class="fas fa-envelope">  <span> Email : askd442@gmail.com</span></i>
-        <i class="fas fa-address-card"> <span> Address : Ayodhya, Uttar Pradesh</span> </i> 
+    <div id="tech_stacks">
+      <h2>My tools <span>&</span> skills</h2>
+    </div>
+    <div class="third_section" id="skills">
+      <h2>My tools <span style="color: #ffa31a">&</span> skills</h2>
+      <div id="skillsicon">
+        <div><iconify-icon icon="logos:html-5"></iconify-icon>
+        <p class="ptag">HTML</p></div>
+        <div><iconify-icon icon="logos:css-3"></iconify-icon><p class="ptag">CSS</p></div>
+        <div><iconify-icon icon="logos:javascript"></iconify-icon><p class="ptag">JavaScript</p></div>
+        <div><iconify-icon icon="logos:java"></iconify-icon><p class="ptag">Java</p></div>
+        <div><iconify-icon icon="logos:hibernate"></iconify-icon><p class="ptag">Hibernate</p></div>
+        <div><iconify-icon icon="logos:mysql"></iconify-icon><p class="ptag">MySql</p></div>
+        <div><iconify-icon icon="logos:spring"></iconify-icon><p class="ptag">Spring</p></div>
+        <div><iconify-icon icon="logos:postman"></iconify-icon><p class="ptag">PostMan</p></div>
+        <div>
+          <iconify-icon
+            icon="icon-park-outline:github"
+            style="color: #f9af22"
+          ></iconify-icon><p class="ptag">GitHub</p>
         </div>
-        <div class="newcont">
-            <div><a href="https://www.linkedin.com/in/ashishgupta189/" target="_blank">
-                <i class="fab fa-linkedin"></i></a></div>
-            <div><a href="https://github.com/AshishGupta189" target="_blank">
-                <i class="fab fa-github"></i></a></div>
-            <div><a href="mailto:askd442@gmail.com" target="_blank">
-                <i class="fas fa-envelope"></i></a></div>
+        <div>
+          <iconify-icon
+            icon="simple-icons:intellijidea"
+            style="color: #fa431c"
+          ></iconify-icon><p class="ptag">IntelliJIdea</p>
         </div>
-    </section>
-</body>
+        <div>
+          <iconify-icon icon="vscode-icons:file-type-vscode"></iconify-icon><p class="ptag">VS Code</p>
+        </div>
+        <div><iconify-icon icon="mdi:aws"></iconify-icon><p class="ptag">AWS</p></div>
+      </div>
+    </div>
+
+    <div id="projects">
+      <div>
+        <h2><span style="color: #ffffff">Projects</span></h2>
+
+
+        <div class="project__block">
+          <div class="project__left">
+              <div class="project__img">
+                  <img src="./download/3716888_5054.jpg" alt="ESPN">
+              </div>
+              <div class="project__tech">
+                  <p>Tech-stacks : Java , MySql , SpringBoot, Hibernate</p>
+                  
+              </div>
+          </div>
+          <div class="project__right">
+              <div class="project__title">
+                <h3><span style="font-weight: bold;color: #ffcc00;font-size: 22px;"> E-Commerce Application</span></h3>
+                  <p>Build Restful Api for an E-Commerce Application.</p>
+                  <p> This is an individual project to build RESTful API's for an e-commerce application.
+                    The application allows admin to add product/category, view all users/orders. 
+                    Also it allows users to add/remove product to cart, place order , etc. 
+                  </p>
+                  <ul>
+                      <li><span style="font-weight: bold;color: #ffcc00;font-size: 22px;line-height: 35px;"> Features</span></li>
+                      <li>Login & Logout Module</li>
+                      <li>Admin Module</li>
+                      <li>User Module</li>
+              
+                  </ul>
+              </div>
+              <div class="project__buttons">
+                  <a href="https://drive.google.com/file/d/1xOSlcDQIdoCwVnB3MpN0yr98bPvcC56S/view?usp=sharing" target="_blank"><button class="btn-live btn-md btn-primary">Video</button></a>
+                  <a href="https://github.com/AshishGupta189/ECommerce" target="_blank"><button class="btn-live btn-md btn-primary">Github</button></a>
+              </div>
+          </div>
+        </div>
+
+        <div class="project__block">
+          <div class="project__left">
+              <div class="project__img">
+                  <img src="./download/Screenshot 2022-12-13 at 7.03.44 PM.png" alt="Online cab Booking">
+              </div>
+              <div class="project__tech">
+                  <p>Tech-stacks : Java, SpringBoot, MySql, Hibernate</p>
+                  
+              </div>
+          </div>
+          <div class="project__right">
+              <div class="project__title">
+                  <h3><span style="font-weight: bold;color: #ffcc00;font-size: 22px;">Online Cab Booking Service</span></h3>
+                  <p>Build Restful Api for an online Cab Booking Management App.</p>
+                  <p> This was a group project to build a RESTful API for an online cab booking system. The application allows customers to view the list of available cabs and book a cab from a desired location to a certain location.
+                  </p>
+                  <ul>
+                      <li><span style="font-weight: bold;color: #ffcc00;font-size: 22px;line-height: 35px;"> Features</span></li>
+                      <li>Login & Logout</li>
+                      <li>Admin Module</li>
+                      <li>Customer Module</li>
+                      <li>Driver Module</li>
+                  </ul>
+              </div>
+              <div class="project__buttons">
+                  <a href="https://drive.google.com/file/d/1xOSlcDQIdoCwVnB3MpN0yr98bPvcC56S/view?usp=sharing" target="_blank"><button class="btn-live btn-md btn-primary">Video</button></a>
+                  <a href="https://github.com/AshishGupta189/Online-Cab-Services" target="_blank"><button class="btn-live btn-md btn-primary">Github</button></a>
+              </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="project__block">
+          <div class="project__left">
+              <div class="project__img">
+                  <img src="./download/COurse Monitoring System.png" alt="Course_Monitor">
+              </div>
+              <div class="project__tech">
+                  <p>Tech-stacks : Java, SpringBoot, MySql, JDBC</p>
+                  
+              </div>
+          </div>
+          <div class="project__right">
+              <div class="project__title">
+                <h3><span style="font-weight: bold;color: #ffcc00;font-size: 22px;"> Course Monitor</span></h3>
+                  <p>Build a console based application of Course Monitoring System</p>
+                  <p> 
+                    This is an individual project to build a console-based application for Course Monitoring System. 
+                    This system allows admin to keep track of faculty, courses, day-wise plans, and course plans.
+                    Also this system allows faculty to see their mappings and day-wise plans, etc.
+                  </p>
+                  <ul>
+                      <li><span style="font-weight: bold;color: #ffcc00;font-size: 22px;line-height: 35px;"> Features</span></li>
+                      <li>Login & Signup </li>
+                      <li>Forget Password</li>
+                      <li>Admin Operations</li>
+                     <li>Faculty Operations</li>
+                  </ul>
+              </div>
+              <div class="project__buttons">
+                  <a href="https://drive.google.com/file/d/1ReyE_9uONdlmU5xL7Pz1lnrJkMUJ3GL6/view" target="_blank"><button class="btn-live btn-md btn-primary">Video</button></a>
+                  <a href="https://github.com/AshishGupta189/righteous-sink-155" target="_blank"><button class="btn-live btn-md btn-primary">Github</button></a>
+              </div>
+          </div>
+        </div>
+           <br>
+        
+         <div class="project__block">
+          
+          <div class="project__left">
+              <div class="project__img">
+                  <img src="./download/image4-21.png" alt="Monday.com">
+              </div>
+              <div class="project__tech">
+                  <p>Tech-stacks : HTML5, CSS3, JavaScript</p>
+                  
+              </div>
+          </div>
+          <div class="project__right">
+              <div class="project__title">
+                  <h3><span style="font-weight: bold;color: #ffcc00;font-size: 22px;"> Monday.com </span></h3>
+                  <p>Cloned Monday.com  website which offers project management and  collaboration. </p>
+                  <p>This is a work operating system that facilitates team collaboration and project management 
+                    through customizable workflows and visual boards.
+                    As part of a team project, my teammates and I created the frontend, along with the dashboard.
+                  </p>
+                  <ul>
+                      <li><span style="font-weight: bold;color: #ffcc00;font-size: 22px;line-height: 35px;"> Features</span></li>
+                    
+                      <li>Login & Signup</li>
+                      <li>Access to different pages</li>
+                      <li>View the plans</li>
+                  </ul>
+              </div>
+              <div class="project__buttons">
+                  <a href="https://roaring-meringue-e04538.netlify.app/" target="_blank"><button class="btn-live btn-md btn-primary">Live</button></a>
+                  <a href="https://github.com/AshishGupta189/Monday.comclone" target="_blank"><button class="btn-live btn-md btn-primary">Github</button></a>
+              </div>
+          </div>
+        </div>
+        <br>
+        
+        
+           
+        
+
+
+      </div>
+    </div>
+    
+
+
+
+
+  <div class="title reveal" style="width: 90%; margin: auto;">
+      <a target="_blank" rel="noreferrer" id="cicin" href="https://github.com/ashishgupta189" style="text-decoration: none;">
+      <p style="text-align: center; font-size: 200%; color:#ffffff;padding: 3%;">My Github contributions</p>
+      <img width="100%" style="margin-bottom:20px;display: flex; padding: auto;"  id="github-contributions" src="https://ghchart.rshah.org/ashishgupta189" href="https://github.com/ashishgupta189" alt="Github chart" />
+  </a>
+  </div>
+    <div class="statsBox">
+      <h3>GitHub Stats</h3>
+      <div>
+      <div class="statsContainer">
+          <div>
+              <a href="https://github.com/ashishgupta189" target="_blank">
+                  <img align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=ashishgupta189" />
+              </a>
+          </div>
+      </div>
+
+      <div class="stats-3">
+          <p align="center">
+          <a href="https://github.com/ashishgupta189" target="_blank">
+                  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashishgupta189&bg_color=0D1117" alt="" />
+              </a>
+          </p>
+      </div>
+
+      <div class="stats-2">
+          <p align="center">
+              <a href="https://github.com/ashishgupta189/github-readme-stats" target="_blank">
+                  <img alt="Github Stats" 
+                  src="https://github-readme-stats.vercel.app/api?username=ashishgupta189&show_icons=true&locale=en&theme=react&hide_border=true&bg_color=0D1117" 
+                  />
+              </a>
+          </p>
+      </div>
+
+      
+      </div>
+  </div>
+  <div class="graph-1">
+      <p align="center">
+          <a href="https://github.com/ashishgupta189" target="_blank"><span>
+              <img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ashishgupta189&theme=dracula&bg_color=0D1117" />
+          </span></a> 
+      </p>
+  </div>
+
+
+
+    <div id="contact">
+      <div class="contact__container">
+        <div class="contact__left">
+          <h2>Contact me</h2>
+          <p>Please feel free to contact me via email or linkedin</p>
+         
+          <ul class="footer__socials">
+            <li>
+              <a href="https://www.linkedin.com/in/ashishgupta189/" target="_blank"
+                ><i class="uil uil-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/ashishgupta189" target="_blank"
+                ><i class="uil uil-github"></i
+              ></a>
+            </li>
+            <li><i class="uil uil-phone-alt"></i></li>
+            <li id="phone__li">+91 9648472430</li>
+          </ul>
+
+          
+          <p>You can also download my resume using below button</p>
+
+          <a href="./download/Ashish-Gupta-Resume.pdf" id="downloadresume2" download="Ashish_Gupta_Resume" target="_blank" class="topbtn">Resume</a>
+        </div>
+        <div class="contact_right">
+          <form action="">
+            <input type="text" name="name" id="cname" placeholder="Your Name" />
+            <input
+              type="email"
+              name="email"
+              id="cemail"
+              placeholder="Your Email"
+            />
+            <textarea
+              name="message"
+              rows="6"
+              id="cmessage"
+              placeholder="Message"
+            ></textarea>
+            <button type="submit" class="btn" id="csend">Send</button>
+          </form>
+        </div>
+
+       
+      </div>
+    </div>
+  </body>
 </html>
-<script src="index.js"></script>
+
+<script>
+  
+  let resume = document.getElementById("downloadresume");
+resume.addEventListener("click",function(){
+    window.open("https://drive.google.com/file/d/1T8427-WIewBwpIZn63A6wVDWnYwxdLPl/view?usp=sharing")
+})
+
+let resume2 = document.getElementById("downloadresume2");
+resume2.addEventListener("click",function(){
+    window.open("https://drive.google.com/file/d/1T8427-WIewBwpIZn63A6wVDWnYwxdLPl/view?usp=sharing")
+})
+  
+    let resume3 = document.getElementById("downloadresume3");
+resume3.addEventListener("click",function(){
+    window.open("https://drive.google.com/file/d/1T8427-WIewBwpIZn63A6wVDWnYwxdLPl/view?usp=sharing")
+})
+
+let resume4 = document.getElementById("downloadresume4");
+resume4.addEventListener("click",function(){
+    window.open("https://drive.google.com/file/d/1T8427-WIewBwpIZn63A6wVDWnYwxdLPl/view?usp=sharing")
+})
+  
+
+  window.onload = function () {
+    GitHubCalendar(".calendar", "ashishgupta189");
+    GitHubCalendar(".calendar", "ashishgupta189", { responsive: true });
+  };
+ 
+
+</script>
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+<script>
+  let send = document.getElementById("csend");
+
+  send.addEventListener('click', function(e) {
+  e.preventDefault();
+  let uname = document.getElementById("cname").value;
+  let email = document.getElementById("cemail").value;
+  let message = document.getElementById("cmessage").value;
+  Email.send({
+     Host: "smtp.gmail.com",
+     Username: "mayankmk22@gmail.com",
+     Password: "gyppxysbvkgdjqqn",
+     To: 'askd442@gmail.com',
+     From: email,
+     Subject: "Sending Email from portfolio",
+     Body: message,
+     Attachments: [
+     {
+        name: "File_Name_with_Extension",
+        path: "Full Path of the file"
+     }]
+})
+    .then(function (message) {
+    alert("Mail has been sent successfully")
+    });
+
+
+});
+</script>
+<script>
+    let count=0;
+    var slidenavbar = document.getElementById("slidenavbar");
+  var menuid = document.getElementById("menuid");
+    function changeFunction(){
+        if (count == 0) {
+        count = 1;
+   
+    
+    slidenavbar.style.opacity="1";
+          menuid.style.visibility="hidden";
+    slidenavbar.style.visibility="visible";
+          
+  } else {
+    count = 0;
+  
+    slidenavbar.style.opacity="0";
+    slidenavbar.style.visibility="hidden";
+     menuid.style.visibility="visible";
+  }
+    }
+</script>
+
